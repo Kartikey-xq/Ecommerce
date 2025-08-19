@@ -2,7 +2,10 @@ const app = require('./app');  // import express app
 const { prisma } = require('./prisma');
 const cors = require('cors');
 
-
+app.use(cors({
+    origin: [process.env.FrontendURI],
+    credentials: true
+}));
 const port = process.env.PORT || 3000;
 app.listen(port, '0.0.0.0', () => {
   console.log(`Server running on port ${port}`);
