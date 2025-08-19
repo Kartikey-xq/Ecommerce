@@ -227,11 +227,12 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
         "fromEnvVar": "DATABASE_URL",
-        "value": "postgresql://postgres:zebronics1%40A@localhost:5432/mydb?schema=public"
+        "value": null
       }
     }
   },
