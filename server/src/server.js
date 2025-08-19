@@ -1,8 +1,10 @@
 const app = require('./app');  // import express app
 const { prisma } = require('./prisma');
 
-app.listen(5000, () => console.log("Server running"));
-
+const port = process.env.PORT || 3000;
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server running on port ${port}`);
+});
 async function testDB() {
     try {
         await prisma.$connect();
