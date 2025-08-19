@@ -1,5 +1,7 @@
 const app = require('./app');  // import express app
 const { prisma } = require('./prisma');
+const cors = require('cors');
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, '0.0.0.0', () => {
