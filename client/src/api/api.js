@@ -1,4 +1,5 @@
 import axios from "axios";
+export const baseUrl ="https://ecommerce-production-cb26.up.railway.app/api/v1";
 
 const api = axios.create({
   baseURL: "https://ecommerce-production-cb26.up.railway.app/api/v1",
