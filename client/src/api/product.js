@@ -1,5 +1,6 @@
 import axios from 'axios';
-const baseurl = "http://localhost:5000/api/v1/product"
+const baseurl = "https://ecommerce-production-cb26.up.railway.app/api/v1/product";
+
 
 export const createProduct = async (userData) => {
   const response = await axios.post(baseurl, userData, { withCredentials: true });
