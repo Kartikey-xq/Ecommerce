@@ -41,7 +41,7 @@ export const Signup = () => {
     setCurrentUser(loginResponse);
   } catch (error) {
     console.log("Error in registering user:", error.message);
-          toast.error("email already exists"); // Pass the error message directly to the toast
+          toast.error("error in registering"); // Pass the error message directly to the toast
 
   }
 }
