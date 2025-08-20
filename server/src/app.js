@@ -13,7 +13,8 @@ const orderRoutes = require('./Routes/orderRoutes');
 const paymentRoutes = require('./Routes/paymentRouter');
 const allowedOrigins = [
   'https://ecommerce-git-main-kartikeys-projects-2fe7d9d3.vercel.app',
-  'https://ecommerce-two-ebon-61.vercel.app'
+  'https://ecommerce-two-ebon-61.vercel.app',
+  'https://ecommerce-kwk40ufw9-kartikeys-projects-2fe7d9d3.vercel.app'
 ];
 
 const app = express();
