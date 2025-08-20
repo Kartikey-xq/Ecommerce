@@ -18,7 +18,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    origin: [process.env.FrontendURI],
+    origin: https://ecommerce-git-main-kartikeys-projects-2fe7d9d3.vercel.app',
     credentials: true
 }));
 app.use(cookieParser());
