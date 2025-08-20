@@ -11,14 +11,17 @@ const cartRoutes = require('./Routes/cartRoutes');
 const wishlistRoutes = require('./Routes/wishlistRoute');
 const orderRoutes = require('./Routes/orderRoutes');
 const paymentRoutes = require('./Routes/paymentRouter');
-
+const allowedOrigins = [
+  'https://ecommerce-git-main-kartikeys-projects-2fe7d9d3.vercel.app',
+  'https://ecommerce-two-ebon-61.vercel.app'
+];
 
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-    origin: [https://ecommerce-git-main-kartikeys-projects-2fe7d9d3.vercel.app',https://ecommerce-two-ebon-61.vercel.app],
+    origin: allowedOrigins,
     credentials: true
 }));
 app.use(cookieParser());
